@@ -1,0 +1,9 @@
+.inicio{
+    display: flex;
+}
+.inicio__nav{
+    display: flex;
+}
+.inicio__cuerpo{
+    display: block;
+}
