@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><!-- ENCABEZADO -->
+        <nav class="navbar navbar-expand-lg nav-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ADMINISTRADOR FINANCIERO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="meses d-flex">
+            <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Enero</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Febrero</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Marzo</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Abril</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="inicio__cuerpo--lista"> <!-- INPUTS -->
+            <!-- <h2 id="lista__nombre" class="lista__nombre"> </h2> -->
+            <h3>Lista de ingresos:</h3>
+            <div class="input-group mb-3">
+                <input id="inputIngreso" type="number" class="form-control" placeholder="Ingresos" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Agregar</button>
+            </div>
+            <!-- <input type="number" name="ingresos--input" id="lista__ingresos--input"> -->
+            <ul id="lista__ingresos" class="lista__ingresos">
+            </ul>
+            <h3>Lista de gastos:</h3>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Gastos" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Agregar</button>
+            </div>
+            <!-- <input type="number" name="gastos--input" id="lista__gastos--input"> -->
+            <ul id="lista__gastos" class="lista__gastos">
+            </ul>
+            <h3>Gasto mas grande:</h3>
+            <p id="lista__gastomax" class="lista__gastomax"></p>
+            <h3>Balance:</h3>
+            <p id="lista__balance" class="lista__balance"></p>
+        </section>
+    </main>
+    <article class="inicio">
+        <section class="inicio__cuerpo">
+            <h1>ADMINISTRADOR FINANCIERO</h1>
+            <P>El programa te pedirá primero ingresar los ingresos y gastos que tengas en el mes, con eso irá creando un balance de cuanto te falta por pagar y cuanto te sobra</P>
+            <p>Paso 1: Ingresa tu nombre</p>
+            <p>Paso 2: Ingresa tus ingresos mensuales</p>
+            <p>Paso 3: Con el numero 0 pasarás a ingresar los gastos</p>
+            <p>Paso 4: Ingresa los gastos</p>
+            <p>Paso 5: Finalmente ingresando el 0 te mostrará el balance que llevas</p>
+            <p>A futuro se podrá agregar descripcion a los ingresos y gastos, usar filtros de búsqueda, marcar pagos y por pagar, etc. </p>
+        </section>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./desafio.js"></script>
+</body>
+</html>

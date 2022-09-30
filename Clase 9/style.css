@@ -1,3 +1,6 @@
+.nav-color{
+    background-color: rgb(58, 199, 255);
+}
 .inicio{
     display: flex;
 }
