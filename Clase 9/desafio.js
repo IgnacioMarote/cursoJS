@@ -5,31 +5,38 @@ const gastoLista = [];
 //FUNCIONES
 const suma = (total, item) => total + item;
 const resta = (totIngreso, totGasto) => totIngreso - totGasto;
+/* const addlList = (inputNumber, list, form, arrayAdd) =>{
+    let itemAdd = document.getElementById(inputNumber);
+    let listAdd = document.getElementById(list);
+    let formAdd = document.getElementById(form);
+    formAdd.addEventListener(`submit`, function () {
+        arrayAdd.push(itemAdd.value);
+        listAdd.innerHTML += `<li>${itemAdd.value}</li>`;
+        formAdd.reset();
+    })
+} ; */
 
 //DESARROLLO
-/* let inputIngreso  = document.getElementById("inputIngreso") */
+/* addlList(inputIngreso, listaIngresos, formIngresos, ingresoLista); */
 
-
-let itemIngreso = document.getElementById("inputIngreso");
-itemIngreso.addEventListener(`submit`, () => {
-    ingresoLista.push(itemIngreso.value);
-    let itemIngresoLista = document.getElementById("lista__ingresos");
-    itemIngresoLista.innerHTML += `<li>${itemIngreso.value}</li>`;
-})
-
-/* let gasto = parseInt(prompt(`${nombre} agrega un gasto`)); */
-let itemGasto = document.getElementById("lista__gastos")
-while(gasto!=0){
-    itemGasto.innerHTML += `<li>${gasto}</li>`;
-    
-    gastoLista.push(gasto);
-    /* gasto = parseInt(prompt("Agrega un gasto")); */
-
-    let input1  = document.getElementById("inputIngreso")
-    input1.addEventListener(`input`, () => {
-        
+let itemIng = document.getElementById("inputIngresos");
+let listIng = document.getElementById("listaIngresos");
+let formIng = document.getElementById("formIngresos");
+formIng.addEventListener(`submit`, function () {
+        ingresoLista.push(itemIng.value);
+        listIng.innerHTML += `<li>${itemIng.value}</li>`;
+        formIng.reset();
     })
-}
+
+let itemGas = document.getElementById("inputGastos");
+let listGas = document.getElementById("listaGastos");
+let formGas = document.getElementById("formGastos");
+formGas.addEventListener(`submit`, function () {
+        gastoLista.push(itemGas.value);
+        listGas.innerHTML += `<li>${itemGas.value}</li>`;
+        formGas.reset();
+    })
+
 let gastoMax = gastoLista.reduce((a, b) => Math.max(a, b), 0);
 /* alert(`El gasto mas grande es de: $${gastoMax}`); */
 

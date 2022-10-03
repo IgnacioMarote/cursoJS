@@ -70,20 +70,24 @@
         </section>
 
         <section class="inicio__cuerpo--lista"> <!-- INPUTS -->
-            <!-- <h2 id="lista__nombre" class="lista__nombre"> </h2> -->
             <h3>Lista de ingresos:</h3>
-            <div class="input-group mb-3">
-                <input id="inputIngreso" type="number" class="form-control" placeholder="Ingresos" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Agregar</button>
-            </div>
-            <!-- <input type="number" name="ingresos--input" id="lista__ingresos--input"> -->
-            <ul id="lista__ingresos" class="lista__ingresos">
-            </ul>
+            <form id="formIngresos">
+                <div class="input-group mb-3">
+                    <input id="inputIngresos" type="number" class="form-control" placeholder="Ingresos" aria-describedby="button-addon1">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Agregar</button>
+                </div>
+                <ul id="listaIngresos" class="lista__ingresos">
+                </ul>
+            </form>
             <h3>Lista de gastos:</h3>
-            <div class="input-group mb-3">
-                <input type="number" class="form-control" placeholder="Gastos" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Agregar</button>
-            </div>
+            <form id="formGastos">
+                <div class="input-group mb-3">
+                    <input id="inputGastos" type="number" class="form-control" placeholder="Gastos" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Agregar</button>
+                </div>
+                <ul id="listaGastos" class="lista__gastos">
+                </ul>
+            </form>
             <!-- <input type="number" name="gastos--input" id="lista__gastos--input"> -->
             <ul id="lista__gastos" class="lista__gastos">
             </ul>
