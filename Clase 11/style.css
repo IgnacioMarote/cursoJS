@@ -1,0 +1,12 @@
+.nav-color{
+    background-color: rgb(58, 199, 255);
+}
+.inicio{
+    display: flex;
+}
+.inicio__nav{
+    display: flex;
+}
+.inicio__cuerpo{
+    display: block;
+}
