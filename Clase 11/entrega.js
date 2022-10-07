@@ -34,11 +34,6 @@ formIng.addEventListener(`submit`, function (e) {
         formIng.reset();
     })
 
-for (let i = 0; i < sessionStorage.length; i++ ) {
-    
-    listIng.innerHTML += `<li>Nombre: ${sessionStorage.getItem(nameIngreso)} Valor: ${clave.itemJSON} </li>`;
-}
-
 
 let itemGas = document.getElementById("inputGastos");
 let listGas = document.getElementById("listaGastos");
