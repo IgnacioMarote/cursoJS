@@ -1,0 +1,7 @@
+[
+    { "mes": "Enero", "balance" : 5000, "id" : 1 },
+    { "mes": "Febrero", "balance" : 200, "id" : 2 },
+    { "mes": "Marzo", "balance" : 10, "id" : 3 },
+    { "mes": "Abril", "balance" : 6500, "id" : 4 },
+    { "mes": "Mayo", "balance" : 5500, "id" : 5 }
+]
