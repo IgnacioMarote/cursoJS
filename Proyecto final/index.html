@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><!-- ENCABEZADO -->
+        <nav class="navbar navbar-expand-lg nav-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ADMINISTRADOR FINANCIERO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="meses d-flex">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="mes__Enero" class="card-title">Enero</h5>
+                    <p id="card__Enero" class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="mes__Febrero" class="card-title">Febrero</h5>
+                    <p id="card__Febrero" class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="mes__Marzo" class="card-title">Marzo</h5>
+                    <p id="card__Marzo" class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="mes__Abril" class="card-title">Abril</h5>
+                    <p id="card__Abril" class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="mes__Mayo" class="card-title">Mayo</h5>
+                    <p id="card__Mayo" class="card-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="inicio__cuerpo--lista"> <!-- INPUTS -->
+            <h3>Lista de ingresos:</h3>
+            <form id="formIngresos">
+                <div class="input-group mb-3">
+                    <input id="inputIngresosNombre" type="text" class="form-control" placeholder="Nombre" aria-describedby="button-addon1">
+                    <input id="inputIngresosValor" type="number" class="form-control" placeholder="Valor" aria-describedby="button-addon1">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Agregar</button>
+                </div>
+                <ul id="listaIngresos" class="lista__ingresos">
+                </ul>
+            </form>
+            <h3>Lista de gastos:</h3>
+            <form id="formGastos">
+                <div class="input-group mb-3">
+                    <input id="inputGastosNombre" type="text" class="form-control" placeholder="Nombre" aria-describedby="button-addon2">
+                    <input id="inputGastosValor" type="number" class="form-control" placeholder="Valor" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Agregar</button>
+                </div>
+                <ul id="listaGastos" class="lista__gastos">
+                </ul>
+            </form>
+            <!-- <input type="number" name="gastos--input" id="lista__gastos--input"> -->
+            <ul id="lista__gastos" class="lista__gastos">
+            </ul>
+            <h3>Balance:</h3>
+            <p id="listaBalance" class="lista__balance"></p>
+        </section>
+    </main>
+    <article class="inicio">
+        <section class="inicio__cuerpo">
+            <h1>ADMINISTRADOR FINANCIERO</h1>
+            <p>Paso 2: Ingresa tus ingresos con el nombre y el monto</p>
+            <p>Paso 4: Ingresa los gastos con el nombre y el monto</p>
+            <p>Paso 5: Finalmente al agregar los gastos te calculará el balance</p>
+        </section>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./desafio.js"></script>
+</body>
+</html>
